@@ -1,0 +1,120 @@
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{leftidx}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{listings}
+\usepackage{pxfonts}
+
+\setitemize{nolistsep}
+
+
+%These are to abbreviate the number sets
+\newcommand{\R}[0]{\mathbb{R}}
+\newcommand{\Q}[0]{\mathbb{Q}}
+\newcommand{\Z}[0]{\mathbb{Z}}
+\newcommand{\N}[0]{\mathbb{N}}
+\newcommand{\C}[0]{\mathbb{C}}
+\renewcommand{\H}[0]{\mathbb{H}}
+
+%Lagrangians
+\renewcommand{\L}[0]{\mathcal{L}}
+
+%These are to ease the writing of functions
+\newcommand{\f}[3]{${#1}:{#2}\rightarrow{#3}$}
+
+%Vector space issues:
+\newcommand{\mat}{\mbox{Mat}}
+\newcommand{\stab}[2]{\mbox{Stab}_{#1}\left(#2\right)}
+\newcommand{\im}[0]{\mbox{im}}
+\newcommand{\codim}{\mbox{codim}}
+\newcommand{\sgn}{\mbox{sgn}}
+\newcommand{\V}{{\mathbb{V}}}
+\newcommand{\res}{\mbox{res}}
+\newcommand{\GL}{\mbox{GL}}
+\newcommand{\spans}[0]{\mbox{span}}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\proj}[0]{\mbox{Proj}}
+
+%Algebra
+\newcommand{\gen}[1]{\left\langle#1\right\rangle}
+\newcommand{\Sym}{\mbox{Sym}}
+\renewcommand{\hom}[0]{\mbox{Hom}}
+\newcommand{\osso}{\mbox{osso }}
+\newcommand{\ord}{\mbox{ord}}
+\newcommand{\divides}{\bigm|}
+\newcommand{\tr}{\mbox{tr}}
+
+%High School terms
+
+\newcommand{\cis}{\mbox{cis\,}}
+
+%Multivariable
+
+\newcommand{\Bd}{\mbox{Bd }}
+\newcommand{\Int}{\mbox{Int }}
+\newcommand{\Ext}{\mbox{Ext }}
+\newcommand{\ah}{\mbox{ah}}
+\newcommand{\avg}{\mbox{avg }}
+\newcommand{\curl}{\mbox{curl }}
+\renewcommand{\div}{\mbox{div }}
+\newcommand{\grad}{\mbox{grad }}
+
+%Measure
+
+\newcommand{\JL}{m_{*,J}}
+\newcommand{\JU}{m^{*,J}}
+
+\usepackage{bbm}
+\newcommand{\ind}[1]{\mathbbm{1}_{#1}}
+
+%General
+\renewcommand{\subset}{\subseteq}
+\renewcommand{\epsilon}{\varepsilon}
+
+%Probability
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Cov}{\mbox{Cov}}
+\newcommand{\Var}{\mbox{Var}}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\small\ttfamily,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  columns = fullflexible,	   % sets the column to be flexible
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\@*}{*},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  %frame=single,                    % adds a frame around the code
+  keywordstyle=\bfseries\color{blue},       % keyword style
+  language = Python,
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  %numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  %numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  %title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\raggedbottom
+
+% Coloring
+
+\newcommand{\red}[1]{\color{red}{#1}}
+
+% Math align
+\allowdisplaybreaks
