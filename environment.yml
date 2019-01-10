@@ -5,6 +5,5 @@ dependencies:
   - pandas
   - numpy
   - scipy
-  - copy
   - ipywidgets
   - beakerx
